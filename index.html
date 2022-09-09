@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <h1 class="title">Jogo da Velha</h1>
+            </div>
+            <div class="row-4">
+                <div class="box" onclick="verificar(0)">
+                    <img id="casa0">
+                </div>
+                <div class="box" onclick="verificar(1)">
+                    <img id="casa1">
+                </div>
+                <div class="box" onclick="verificar(2)">
+                    <img id="casa2">
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="box" onclick="verificar(3)">
+                    <img id="casa3">
+                </div>
+                <div class="box" onclick="verificar(4)">
+                    <img id="casa4">
+                </div>
+                <div class="box" onclick="verificar(5)">
+                    <img id="casa5">
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="box" onclick="verificar(6)">
+                    <img id="casa6">
+                </div>
+                <div class="box" onclick="verificar(7)">
+                    <img id="casa7">
+                </div>
+                <div class="box" onclick="verificar(8)">
+                    <img id="casa8">
+                </div>
+            </div>
+
+            <div class="row margin-sm">
+                <form>
+                    <input type="button" class="btn btn-primary w-100" onclick="NewGame()" value="Novo Jogo">
+                </form>
+            </div>
+
+            <div class="row margin-sm">
+                <h2 class="result" id="result-winner">Resultado:</h2>
+            </div>
+
+            <div class="row">
+                <h2 class="result" id="X">Pontos X: "0"</h2>
+            </div>
+            <div class="row">
+                <h2 class="result" id="O">Pontos O: "0"</h2>
+            </div>
+            <div class="row">
+                <h2 class="result" id="V">Pontos Velha: "0"</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
